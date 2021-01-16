@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ESARMALL</title>
+	<link rel="icon"  href="logo.png">
+
+	<!-- styleX.css file should be included before bootstrap.css
+	since Modal dialog in styleX conflicts with the one in bootsrap -->
+
+	<link rel="stylesheet" type="text/css" href="css/styleX.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<!-- optional. For more beautiful ui and anmations -->
+	<link rel="stylesheet" type="text/css" href="css/mdb.css">
+	<!-- for icon fonts. not optional-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<!-- welcome box positioned at the center of the page -->
+	<!-- WELCOME BOX -->
+	<div class="welcome">
+		<div class="box bg-colorful">
+			<center>
+				<img src="logo.png" class="welcome-logo" />
+				<h3>ESAR MALL<sup><small>TM</small></sup></h3>
+				<!-- this button opens the modal dialog when clicked -->
+				<!-- you can either click or hover the button. See Js code for more info-->
+				<button class="btn btn-lg btn-success" id="openModal">Open form</button>
+			</center>
+		</div>
+	</div>
+	<!-- END OF WELCOME BOX -->
+
+	<!--MODAL DIALOG-->
+	<!-- modal-holder is the black area that fills the entire screen -->
+	<div id="modal-holder" class="modal">
+		<!-- this is the visible part that holds together the header, body and footer of the modal -->
+		<div class="modal-content">
+		   <div class="modal-header">                  
+		       <p>Please Login to explore more</p>
+		       <span class="close" id="close-btn">&times;</span>                  
+		   </div>
+		   <div class="modal-body">
+		    <!-- this is where the login form and other stuff goes in -->
+		    <!-- a row with 2 columns. One with the login form and the other with two buttons -->
+		    <!-- BEGIN -->
+		
+		    	<div class="row">
+		    		<!-- first column -->
+		    		<div class="col-md-6">
+		    			
+		    			<form class="login-form">
+		    				<div class="form-group">
+		    					<input type="text" name="" placeholder="EMAIL / MOBILE NUMBER" class="form-control" required="">
+		    				</div>
+		    				<div class="form-group">
+		    					<input type="text" name="" placeholder="PASSWORD" class="form-control" required="">
+		    				</div>
+		    				<a href="#" class="forgot-password">Forgot password</a>
+		    				<br>
+		    				<br>
+		    				<button class="btn btn-lg btn-warning form-control">LOGIN</button>
+		    				<br>
+		    				<br>
+		    				
+		    				<p style="margin: auto; text-align: center;">New to EsarMall?<a href="" class="register-link"> Register here</a></p>
+		    				
+		    			</form>
+		    			
+		    		</div>
+		    		<br>
+		    		
+		    		<div class="">
+		    			<center>
+		    			<p class="gray-circle">OR</p>
+		    			</center>
+		    		</div>
+		    		<br>
+		    		<!-- second column -->
+		    		<div class="col-md-6">
+		    			<center>
+		    			<h4><strong>Login with your Social Account</strong></h4>
+		    			<p>Dont want to create any new account? Use any of your existing accounts</p>
+		    			<div class="">
+		    				<button class="btn btn-lg btn-primary"><i class="fa fa-facebook"> </i> Facebook</button>
+		    				<button class="btn btn-lg btn-danger "><i class="fa fa-google-plus"> </i> Google +</button>
+		    			</div>
+		    			</center>
+		    			
+		    		</div>
+		    	</div>
+		    	<!-- end of row -->
+		 
+		    <!-- END -->
+		   </div>
+		   <!-- end of modal body -->
+		                           
+		</div>
+		<!-- end of modal content -->
+	</div>
+	<!-- END OF MODAL DIALOG -->
+
+<!-- link to styleX js code. Include before any other scripts -->
+<script type="text/javascript" src="js/styleX.js"></script>
+	
+
+</body>
+</html>
